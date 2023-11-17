@@ -118,7 +118,6 @@ body{
 
 }
 
-/* About */
 
 .about{
     text-align: center;
@@ -158,7 +157,6 @@ body{
     width: 40px;
 }
 
-/* knowledge */
 
 .knowledge{
     background-color: #e5e5f7;
@@ -331,10 +329,6 @@ body{
     color: var(--color-title);
     justify-content: space-between;
     transition: background-color .3s;
-}
-
-.questions__title--clicked{
-    background-color: rgb(255, 255, 255);
 }
 
  .questions__arrow{
