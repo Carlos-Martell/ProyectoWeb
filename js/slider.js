@@ -29,11 +29,34 @@
     }
 
 
+    
+
+
 
 
 
 
 
 })();
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    const botonesVerMas = document.querySelectorAll('.plan__cta');
+
+    botonesVerMas.forEach(boton => {
+        boton.addEventListener('click', function(event) {
+            event.preventDefault(); // Evita el comportamiento predeterminado del enlace
+
+            const descripcion = this.nextElementSibling;
+
+            // Alternar la visibilidad de la descripción
+            if (descripcion.style.display === 'none' || descripcion.style.display === '') {
+                descripcion.style.display = 'block';
+            } else {
+                descripcion.style.display = 'none';
+            }
+        });
+    });
+});
 
 
