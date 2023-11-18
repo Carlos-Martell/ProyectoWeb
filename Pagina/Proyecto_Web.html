@@ -282,53 +282,57 @@
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </p>
           <button type="button" id="openModal">Empezamos ahora</button>
-
+          <div id="overlay"></div>
           <div id="myModal" class="modal">
             <div class="modal-content">
               <div class="modal-header">
                 <h1>Modal title</h1>
               </div>
               <div class="modal-body">
-                <form id="myForm">
-                  <div>
+                <form id="myForm" class="form-content">
+                  <div class="form-column">
                     <label>First name</label>
                     <input type="text" id="firstName" required />
-                  </div>
-                  <div>
-                    <label>Last name</label>
-                    <input type="text" id="lastName" required />
-                  </div>
-                  <div>
-                    <label>Username</label>
-                    <input type="text" id="username" required />
-                  </div>
-                  <div>
-                    <label>City</label>
-                    <input type="text" id="city" required />
-                  </div>
-                  <div>
-                    <label>State</label>
+                    
+                    <label>Country</label>
                     <select id="state" required>
-                      <option selected disabled value="">Choose...</option>
+                      <option selected disabled value="">Departamento...</option>
                       <option>...</option>
-                    </select>
+                      <option>...</option>
+                      <option>...</option>
+                      <option>...</option>
+                      <option>...</option>
+                      <option>...</option>
+                    </select> 
+                    <label>Provincia</label>
+                    <input type="text" id="city" required />
+                    <label>Celular</label>
+                    <input type="text" id="lastName" required /> 
                   </div>
-                  <div>
-                    <label>Zip</label>
-                    <input type="text" id="zip" required />
-                  </div>
-                  <div>
-                    <input type="checkbox" id="terms" required />
-                    <label>Agree to terms and conditions</label>
-                  </div>
-                  <div>
-                    <button type="submit">Submit form</button>
+                  <div class="form-column">
+                    <label>Last name</label>
+                    <input type="text" id="lastName" required /> 
+                    <label>Distrito</label>
+                    <input type="text" id="city" required />
+                    <label>Email</label>
+                    <input type="text" id="city" required />
+                    <label>Género</label>
+                    <input type="radio" id="male" name="gender" value="male" required >Masculino</input>
+                    <input type="radio" id="female" name="gender" value="female" required>Femenino</input>
+                  </div> 
+                  <div class="additional-info">
+                    <label for="consulta" class="textarea-label">¿Qué desea consultar?</label>
+                    <textarea id="consulta" required></textarea>
+                    <label>
+                      <input type="checkbox" id="terms" required>
+                      Acepte los términos y condiciones para solicitar información
+                    </label>
                   </div>
                 </form>
               </div>
-              <div class="modal-pie-pagina">
-                <button type="button" id="closeModal">Close</button>
-                <button type="reset">Enviar datos</button>
+              <div class="button-container">
+                <button class="modal-button" type="button" id="closeModal">Close</button>
+                <button class="modal-button" id="submitForm" type="reset">Enviar datos</button>
               </div>
             </div>
           </div>
